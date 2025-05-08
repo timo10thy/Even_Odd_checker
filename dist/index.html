@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Even-Odd Checker</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
-  <div class="bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-xl w-full max-w-sm sm:max-w-md lg:max-w-lg text-center space-y-5">
+  <div
+    class="bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-xl w-full max-w-sm sm:max-w-md lg:max-w-lg text-center space-y-5">
     <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">
       Even-Odd Checker
     </h1>
-    
-    <input 
-      type="number" 
-      placeholder="Enter a number" 
-      class="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-md text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
-    />
-    
-    <button 
-      type="button" 
-      id="btn"
-      class="w-full bg-blue-500 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base hover:bg-blue-600 transition duration-300"
-    >
+
+    <input type="number" placeholder="Enter a number"
+      class="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-md text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+    <button type="button" id="btn"
+      class="w-full bg-blue-500 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base hover:bg-blue-600 transition duration-300">
       Submit
     </button>
-    
+
     <div id="num" class="text-sm sm:text-base font-medium"></div>
     <div class="mt-6 text-center">
-        <a href="https://github.com/timo10thy" class="text-indigo-600 hover:underline">GitHub Link</a>
-      </div>
+      <a href="https://github.com/timo10thy" class="text-indigo-600 hover:underline">GitHub Link</a>
+    </div>
   </div>
 
   <script>
@@ -58,7 +55,9 @@
       }
 
       num.appendChild(p);
+      input.value = ''
     });
   </script>
 </body>
+
 </html>
