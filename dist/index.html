@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Even-Odd checker</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter a number">
+    <button type="button" id="btn">Submit</button>
+    <div id="num"></div>
+  
+    <script>
+      let input = document.querySelector('input[type=number]');
+      let num = document.getElementById('num');
+      let button = document.getElementById('btn');
+  
+      button.addEventListener('click', () => {
+        let number = Number(input.value);
+        num.innerHTML = ''; 
+  
+        let p = document.createElement('p'); 
+  
+        if (number % 2 === 0) {
+          p.textContent = `This number (${number}) is even`;
+          p.style.color = 'green'
+        } else {
+          p.textContent = `This number (${number}) is odd`;
+          p.style.color = 'red'
+        }
+  
+        num.appendChild(p); 
+      });
+    </script>
+</body>
+</html>
